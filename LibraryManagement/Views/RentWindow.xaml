@@ -1,0 +1,39 @@
+﻿<Window x:Class="LibraryManagement.Views.RentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement.Views"
+        mc:Ignorable="d"
+        Title="RentWindow" Height="450" Width="800">
+    <Grid>
+        <Button
+            Content="Ijaraga berish kuni"
+            Width="150"
+            Height="50"
+            Background="Aqua"
+            Click="IjaragaBerish"
+            Margin="0 0 0 300"
+            FontSize="12"
+            Foreground="Black"/>
+        
+        <Button
+            Content="Tell Number"
+            Width="150"
+            Height="50"
+            Background="Brown"
+            Click="TellNumber"
+            FontSize="12"
+            Foreground="White"/>
+        
+        <Button
+            Content="Password"
+            Width="150"
+            Height="50"
+            Background="DarkGray"
+            Click="OnClickPassword"
+            Margin="0 300 0 0"
+            Foreground="Black"
+            FontSize="12"/>
+    </Grid>
+</Window>
