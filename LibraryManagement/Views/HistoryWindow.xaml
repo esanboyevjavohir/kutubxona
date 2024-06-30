@@ -1,0 +1,30 @@
+﻿<Window x:Class="LibraryManagement.Views.HistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement.Views"
+        mc:Ignorable="d"
+        Title="HistoryWindow" Height="450" Width="800">
+    <Grid>
+        <Button
+            Content="Ijaraga olgan kitoblar ro'yxati"
+            Width="200"
+            Height="60"
+            FontSize="15"
+            Background="IndianRed"
+            Foreground="White"
+            Margin="0 0 0 200"
+            Click="RoyxatClicked"/>
+
+        <Button
+            Content="Nechi kunga olingani"
+            Width="200"
+            Height="60"
+            FontSize="15"
+            Background="Violet"
+            Foreground="White"
+            Margin="0 100 0 0"
+            Click="KuniClicked"/>
+    </Grid>
+</Window>
