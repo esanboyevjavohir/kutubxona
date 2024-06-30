@@ -15,28 +15,21 @@ using System.Windows.Shapes;
 namespace LibraryManagement.Views
 {
     /// <summary>
-    /// Interaction logic for AccountWindow.xaml
+    /// Interaction logic for HistoryWindow.xaml
     /// </summary>
-    public partial class AccountWindow : Window
+    public partial class HistoryWindow : Window
     {
-        public AccountWindow()
+        public HistoryWindow()
         {
             InitializeComponent();
         }
 
-        private void OnClickEdit(object sender, RoutedEventArgs e)
+        private void RoyxatClicked(object sender, RoutedEventArgs e)
         {
-            EditWindow editWindow = new EditWindow();
-            editWindow.Show();
+
         }
 
-        private void HistoryClicked(object sender, RoutedEventArgs e)
-        {
-            HistoryWindow historyWindow = new HistoryWindow();
-            historyWindow.Show();
-        }
-
-        private void LogOutClicked(object sender, RoutedEventArgs e)
+        private void KuniClicked(object sender, RoutedEventArgs e)
         {
 
         }
