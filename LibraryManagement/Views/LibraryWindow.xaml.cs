@@ -81,31 +81,12 @@ namespace LibraryManagement.Views
         {
             var searchText = searchTextBox.Text;
 
-            Predicate<Library> predicate = delegate (Library emp)
-            {
-
-                if (emp.Citizenship is not null)
-                {
-                    if (emp.Citizenship.ToString().Contains(searchText))
-                        return true;
-                }
-
-                else if (emp.BirthDay is not null)
-                {
-                    if (emp.BirthDay.ToString().Contains(searchText))
-                        return true;
-                }
-
-                return false;
-            };
-
             var searchBook = libraries.Where(book =>
-                book.Id.ToString().Contains(searchText)||
-                book.Title.Contains(searchText)||
-                book.Author.Contains(searchText)||
-                book.Genre.FirstOrDefault().Contains(searchText)||
-                book.Description.Contains(searchText)||
-                predicate.Invoke(book));
+                book.Id.ToString().Contains(searchText) ||
+                book.Title.Contains(searchText) ||
+                book.Author.Contains(searchText) ||
+                book.Genre.FirstOrDefault().Contains(searchText) ||
+                book.Description.Contains(searchText));
 
             bookDataGrid.ItemsSource = searchBook;
         }
