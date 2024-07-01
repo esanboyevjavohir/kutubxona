@@ -15,29 +15,13 @@ using System.Windows.Shapes;
 namespace LibraryManagement.Views
 {
     /// <summary>
-    /// Interaction logic for RentWindow.xaml
+    /// Interaction logic for Kuni.xaml
     /// </summary>
-    public partial class RentWindow : Window
+    public partial class Kuni : Window
     {
-        public RentWindow()
+        public Kuni()
         {
             InitializeComponent();
-        }
-
-        private void IjaragaBerish(object sender, RoutedEventArgs e)
-        {
-            Kuni kuni = new Kuni();
-            kuni.Show();
-        }
-
-        private void TellNumber(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OnClickPassword(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
